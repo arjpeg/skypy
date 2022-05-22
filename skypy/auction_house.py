@@ -37,7 +37,11 @@ class AuctionHouse:
         if page_number > self._cur_max_page:
             raise AHPageDoesntExistError(page_number, self._cur_max_page)
 
-        url = f"{self.API_URL}?key={self.api_key}&page={page_number}"
+        url = (
+            f"{self.API_URL}?key={self.api_key}&page={page_number}"
+            if page_number > 0
+            else self.API_URL
+        )
         response = requests.get(url)
 
         return response.json()

@@ -1,7 +1,11 @@
+from __future__ import annotations
+
 from enum import Enum
 from typing import Any
 
 import colorama
+
+from skypy.utils import parse_nbt_data, remove_color_codes
 
 
 class ItemRarity(Enum):
@@ -35,16 +39,85 @@ class Item:
         name: str,
         rarity: ItemRarity,
         lore: str,
-        nbt_data: dict[str, Any],
+        extra: str,
+        nbt_data: str,
         uuid: str | None = None,
     ) -> None:
         self.name: str = name
         self.rarity: ItemRarity = rarity
-        self.lore: str = lore
-        self.nbt_data: dict[str, Any] = nbt_data
+        self.lore: str = remove_color_codes(lore)
+        self.nbt_data: dict[str, Any] = parse_nbt_data(nbt_data)
         self.uuid: str | None = uuid
+        self.extra: str = extra
 
-        # if name == "Enchanted Book":
+    @staticmethod
+    def make_correct_item(item: Item) -> Item:
+        if EnchantedBook.is_book(item):
+            return EnchantedBook.make_book(item)
 
-    def __str__(self):
-        return f"{self.name} (x{self.nbt_data})"
+        return item
+
+    def __repr__(self):
+        return f"Item({self.name} ({self.rarity.__repr__()}) {remove_color_codes(self.extra)})"
+
+
+class EnchantedBook(Item):
+    """Class to represent an enchanted book due to the way hypixel categorizes items."""
+
+    def __init__(
+        self,
+        book_name: str,
+        lore: str,
+        extra: str,
+        nbt_data: dict[str, Any],
+        uuid: str | None = None,
+        book_level: int = 1,
+        rarity: ItemRarity = ItemRarity.COMMON,
+    ) -> None:
+        self.name = book_name
+        self.lore = remove_color_codes(lore)
+        self.extra = remove_color_codes(extra)
+        self.rarity = rarity
+        self.nbt_data = nbt_data
+        self.uuid = uuid
+        self.level = book_level
+
+    @staticmethod
+    def is_book(item: Item) -> bool:
+        if item.name == "Enchanted Book":
+            return True
+
+        return False
+
+    @staticmethod
+    def make_book(item: Item) -> EnchantedBook:
+        if not EnchantedBook.is_book(item):
+            raise ValueError("Item can't be made into an enchanted book.")
+
+        # get the name from the extra information
+        # which looks like "Enchanted Book Enchanted Book Ultimate Wise",
+        book_name: str = remove_color_codes(" ".join(item.extra.split(" ")[4:]))
+        if len(book_name.split(" ")) > 3:
+            print(book_name)
+            print(item.extra)
+            print(item.nbt_data)
+
+        # get the level from the extra information
+        enchants: dict[str, int] = item.nbt_data["i"][0]["tag"]["ExtraAttributes"][
+            "enchantments"
+        ]
+
+        enchant_level: int = enchants[list(enchants.keys())[0]]
+
+        return EnchantedBook(
+            book_name=book_name,
+            lore=item.lore,
+            extra=item.extra,
+            nbt_data=item.nbt_data,
+            uuid=item.uuid,
+            book_level=enchant_level,
+            rarity=item.rarity,
+        )
+
+    def __repr__(self):
+        return f"EnchantedBook({colorama.Fore.LIGHTCYAN_EX}{self.name} {self.level}{colorama.Fore.RESET})"

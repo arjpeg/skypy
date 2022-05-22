@@ -49,6 +49,16 @@ class Auction:
     is_bin: bool
     bids: list[AuctionBid] = field(default_factory=list)
 
+    @property
+    def highest_bid(self) -> float:
+        if self.is_bin:
+            return self.starting_bid
+        else:
+            if self.bids:
+                return max(self.bids, key=lambda bid: bid.amount).amount
+            else:
+                return self.starting_bid
+
     @staticmethod
     def from_json(json: dict[str, Any]) -> Auction:
         """
@@ -63,12 +73,15 @@ class Auction:
             time_started=json["start"],
             time_ended=json["end"],
             category=AuctionCategory(json["category"].upper()),
-            item=Item(
-                uuid=json.get("item_uuid"),
-                name=json["item_name"],
-                rarity=ItemRarity(json["tier"]),
-                lore=json["item_lore"],
-                nbt_data=json["extra"],
+            item=Item.make_correct_item(
+                Item(
+                    uuid=json.get("item_uuid"),
+                    name=json["item_name"],
+                    rarity=ItemRarity(json["tier"]),
+                    lore=json["item_lore"],
+                    nbt_data=json["item_bytes"],
+                    extra=json["extra"],
+                )
             ),
             starting_bid=json["starting_bid"],
             claimed=json["claimed"],
