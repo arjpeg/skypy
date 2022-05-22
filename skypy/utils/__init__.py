@@ -53,7 +53,7 @@ def parse_nbt_data(data: str) -> dict[str, Any]:
     return unpack_nbt(nbt_file)
 
 
-def to_greek_numeral(num: int) -> str:
+def convert_to_greek_numeral(num: int) -> str:
     """
     Convert the given number to a greek numeral upto 10.
     """
