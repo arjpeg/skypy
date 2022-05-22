@@ -1,4 +1,4 @@
-from skypy.src.utils import remove_color_codes
+from skypy.utils import remove_color_codes
 
 
 def test_remove_color_codes() -> None:
