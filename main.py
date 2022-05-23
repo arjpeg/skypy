@@ -1,4 +1,5 @@
 import colorama
+
 import skypy
 from skypy.auction import AuctionCategory
 
@@ -17,6 +18,7 @@ for auction in auction_house.get_auctions(page1):
             auction.item,
             f"@{colorama.Fore.YELLOW}{auction.highest_bid:,} coins{colorama.Fore.RESET}",
         )
+        print(auction.item)
 
 # print(auction_house.get_auction(page1, 2))
 # print(auction_house.get_auction(page1, 2).item.nbt_data)

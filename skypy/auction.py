@@ -4,7 +4,9 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any
 
-from .item import Item, ItemRarity
+from skypy.items import make_correct_item
+from skypy.items.item import Item
+from skypy.items.rarity import ItemRarity
 
 
 @dataclass
@@ -73,7 +75,7 @@ class Auction:
             time_started=json["start"],
             time_ended=json["end"],
             category=AuctionCategory(json["category"].upper()),
-            item=Item.make_correct_item(
+            item=make_correct_item(
                 Item(
                     uuid=json.get("item_uuid"),
                     name=json["item_name"],
