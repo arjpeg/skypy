@@ -20,4 +20,6 @@ for auction in auction_house.get_auctions(page1):
             "sold by",
             skypy.utils.get_minecraft_username(auction.seller_uuid),
         )
+        print(auction.item.nbt_data)
+        print(auction.item.dungoun_stars)
         break

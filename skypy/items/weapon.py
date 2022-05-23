@@ -54,7 +54,7 @@ class Weapon(Item):
         )
 
         dungoun_stars: int = item.nbt_data["i"][0]["tag"]["ExtraAttributes"].get(
-            "dungeon_item_level", 0
+            "upgrade_level", 0
         )
 
         return Weapon(
