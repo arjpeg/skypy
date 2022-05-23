@@ -4,7 +4,7 @@ A submodule for the skyblock_api package for the auction house.
 from typing import Any
 
 import requests
-from skypy.auction import Auction
+from skypy.auction.auction import Auction
 from skypy.errors import AHPageDoesntExistError
 
 

@@ -6,6 +6,7 @@ import base64
 import io
 from typing import Any
 
+import requests  # type: ignore
 from nbt import nbt  # type: ignore
 from nbt.nbt import TAG_Compound, TAG_List  # type: ignore
 
@@ -80,3 +81,12 @@ def convert_to_greek_numeral(num: int) -> str:
         return "X"
 
     return f"(UNKNOWN NUMBER {num})"
+
+
+def get_minecraft_username(uuid: str) -> str:
+    """
+    Get the Minecraft username for the given UUID.
+    """
+    req = requests.get(f"https://api.mojang.com/user/profiles/{uuid}/names")
+
+    return req.json()[0]["name"]

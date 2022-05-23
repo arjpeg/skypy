@@ -6,7 +6,8 @@ import os
 from dotenv import load_dotenv  # type: ignore
 
 import skypy.globals as _globals
-from skypy.auction_house import AuctionHouse
+import skypy.utils as utils  # type: ignore
+from skypy.auction.auction_house import AuctionHouse
 
 
 def init(api_key: str | None = None) -> None:

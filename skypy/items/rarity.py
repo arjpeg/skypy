@@ -11,6 +11,7 @@ class ItemRarity(Enum):
     LEGENDARY = "LEGENDARY"
     MYTHIC = "MYTHIC"
     DIVINE = "DIVINE"
+    SUPREME = "SUPREME"
     SPECIAL = "SPECIAL"
     VERY_SPECIAL = "VERY_SPECIAL"
 
@@ -23,6 +24,9 @@ class ItemRarity(Enum):
             "LEGENDARY": colorama.Fore.YELLOW,
             "MYTHIC": colorama.Fore.LIGHTMAGENTA_EX,
             "DIVINE": colorama.Fore.LIGHTCYAN_EX,
+            "SUPREME": colorama.Fore.LIGHTCYAN_EX,
+            "SPECIAL": colorama.Fore.LIGHTRED_EX,
+            "VERY_SPECIAL": colorama.Fore.RED,
         }
 
         return f"{colors.get(self.value, colorama.Fore.WHITE)}{self.value}{colorama.Fore.RESET}"

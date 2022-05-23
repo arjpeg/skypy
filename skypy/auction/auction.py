@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from enum import Enum
 from typing import Any
 
+from skypy.auction.auction_category import AuctionCategory
 from skypy.items import make_correct_item
 from skypy.items.item import Item
 from skypy.items.rarity import ItemRarity
@@ -18,20 +18,10 @@ class AuctionBid:
     timestamp: int
 
 
-class AuctionCategory(Enum):
-    WEAPON = "WEAPON"
-    ARMOR = "ARMOR"
-    ACCESSORIES = "ACCESSORIES"
-    CONSUMABLES = "CONSUMABLES"
-    BLOCKS = "BLOCKS"
-    MISC = "MISC"
-
-
 @dataclass
 class Auction:
     """
-    A class for an auction. Coming from the hypixel api, it looks like this:
-    {"uuid":"{UUID}","auctioneer":"{PERSON_WHO_AUCTIONED}","profile_id":"{WHICH_PROFILE}}","coop":["ANY_COOP_MEMBERS"],"start":{TIME_WHEN_AUCTIONED},"end":{WHEN_AUCTION_END},"item_name":"{ITEM_NAME}","item_lore":"{ITEM_LORE}","extra":"{EXTRA_INFO}","category":"{ITEM_TYPE}","tier":"{ITEM_TIER}","starting_bid":{STARTING_BID},"item_bytes":"{ITEM_DATA_IN_BASE_64}","claimed":{true/false},"claimed_bidders":[],"highest_bid_amount":{HIGHEST_BID_AMOUNT_IF_AUCTION},"last_updated":{...},"bin":{BIN_OR_AUCTION},"bids":[],"item_uuid":"{ITEM_UUID}"},
+    A class for an auction.
     """
 
     uuid: str
@@ -83,7 +73,8 @@ class Auction:
                     lore=json["item_lore"],
                     nbt_data=json["item_bytes"],
                     extra=json["extra"],
-                )
+                ),
+                AuctionCategory(json["category"].upper()),
             ),
             starting_bid=json["starting_bid"],
             claimed=json["claimed"],

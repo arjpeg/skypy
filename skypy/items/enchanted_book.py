@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from skypy.auction.auction_category import AuctionCategory
 from skypy.items.enchant import Enchant
 from skypy.items.item import Item
 from skypy.items.rarity import ItemRarity
@@ -28,26 +29,18 @@ class EnchantedBook(Item):
         self.uuid = uuid
 
     @staticmethod
-    def is_book(item: Item) -> bool:
-        if item.name == "Enchanted Book":
+    def is_book(item: Item, category: AuctionCategory) -> bool:
+        if item.name == "Enchanted Book" and category == AuctionCategory.CONSUMABLES:
             return True
 
         return False
 
     @staticmethod
     def make_book(item: Item) -> EnchantedBook:
-        if not EnchantedBook.is_book(item):
-            raise ValueError("Item can't be made into an enchanted book.")
-        # get the level from the extra information
-        nbt_enchants: dict[str, int] = item.nbt_data["i"][0]["tag"]["ExtraAttributes"][
-            "enchantments"
-        ]
-        enchants: list[Enchant] = [
-            Enchant(name, level) for name, level in nbt_enchants.items()
-        ]
+        # Assumes that the item can be made into an enchanted book
 
         return EnchantedBook(
-            enchants=enchants,
+            enchants=Item.get_enchantments(item),
             lore=item.lore,
             extra=item.extra,
             nbt_data=item.nbt_data,
