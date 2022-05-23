@@ -5,10 +5,10 @@ import os
 
 from dotenv import load_dotenv  # type: ignore
 
+import skypy.auction as auction  # type: ignore
 import skypy.globals as _globals
 import skypy.items as item  # type: ignore
 import skypy.utils as utils  # type: ignore
-from skypy.auction.auction_house import AuctionHouse
 
 
 def init(api_key: str | None = None) -> None:
@@ -25,4 +25,4 @@ def init(api_key: str | None = None) -> None:
     else:
         raise ValueError("No API key given or found in the .env file.")
 
-    AuctionHouse.api_key = _globals.api_key
+    auction.AuctionHouse.api_key = _globals.api_key

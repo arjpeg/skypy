@@ -7,10 +7,10 @@ from skypy.items.weapon import Weapon
 
 skypy.init()
 
-auction_house = skypy.AuctionHouse()
+auction_house = skypy.auction.AuctionHouse()
 
 page1 = auction_house.get_page()
-
+i = 0
 # Get the first book in the first page
 for auction in auction_house.get_auctions(page1):
     if isinstance(auction.item, Weapon):
@@ -20,6 +20,8 @@ for auction in auction_house.get_auctions(page1):
             "sold by",
             skypy.utils.get_minecraft_username(auction.seller_uuid),
         )
-        print(auction.item.nbt_data)
-        print(auction.item.dungoun_stars)
+
+        i += 1
+
+    if i >= 10:
         break

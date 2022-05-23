@@ -7,7 +7,7 @@ import skypy
 
 skypy.init("{YOUR_API_KEY}")
 
-ah = skypy.AuctionHouse()
+ah = skypy.auction.AuctionHouse()
 
 # Get the first page
 first_page = ah.get_page()

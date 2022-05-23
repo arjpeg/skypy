@@ -5,6 +5,7 @@ from typing import Any
 
 import requests
 from skypy.auction.auction import Auction
+from skypy.auction.query.query_object import Query
 from skypy.errors import AHPageDoesntExistError
 
 
@@ -78,3 +79,15 @@ class AuctionHouse:
 
         page_data: dict[str, Any] = requests.get(self.API_URL).json()
         return page_data["totalPages"]
+
+    def match_query(self, auctions: list[Auction], query: Query) -> list[Auction]:
+        """
+        Match the query to the auctions.
+        """
+        matched_auctions: list[Auction] = []
+
+        for auction in auctions:
+            if query.validate(auction):
+                matched_auctions.append(auction)
+
+        return matched_auctions

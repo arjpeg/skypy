@@ -28,6 +28,8 @@ class EnchantedBook(Item):
         self.nbt_data = nbt_data
         self.uuid = uuid
 
+        self.id = self.nbt_data["i"][0]["tag"]["ExtraAttributes"]["id"]
+
     @staticmethod
     def is_book(item: Item, category: AuctionCategory) -> bool:
         if item.name == "Enchanted Book" and category == AuctionCategory.CONSUMABLES:

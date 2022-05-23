@@ -16,9 +16,10 @@ class Item:
         uuid: str | None = None,
     ) -> None:
         self.name: str = name
+        self.nbt_data: dict[str, Any] = parse_nbt_data(nbt_data)
+        self.id: str = self.nbt_data["i"][0]["tag"]["ExtraAttributes"]["id"]
         self.rarity: ItemRarity = rarity
         self.lore: str = remove_color_codes(lore)
-        self.nbt_data: dict[str, Any] = parse_nbt_data(nbt_data)
         self.uuid: str | None = uuid
         self.extra: str = extra
 

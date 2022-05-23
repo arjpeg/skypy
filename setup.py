@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests",
-        "dotenv-python",
+        "python-dotenv",
         "colorama",
         "nbt",
     ],  # add any additional packages that
