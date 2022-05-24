@@ -3,6 +3,7 @@ All item categories that are used in the Hypixel API.
 """
 from __future__ import annotations
 
+import skypy.items.rarity as rarity  # type: ignore
 from skypy.auction.auction_category import AuctionCategory
 from skypy.items.enchant import Enchant  # type: ignore
 from skypy.items.enchanted_book import EnchantedBook

@@ -38,10 +38,18 @@ class Query:
         if self.max_price is not None and self.max_price <= auction.highest_bid:
             return False
 
+        # Get all the enchant names from the item
+        enchant_names = [enchantment.name for enchantment in item.get_enchantments()]
+
         if self.enchantments_at_min is not None:
             for enchantment in self.enchantments_at_min:
-                if enchantment not in item.get_enchantments():
+                if enchantment.name not in enchant_names:
                     return False
+
+                for item_enchant in item.get_enchantments():
+                    if enchantment.name == item_enchant.name:
+                        if item_enchant.level < enchantment.level:
+                            return False
 
         if (
             self.hot_potatoes_at_min is not None
@@ -66,3 +74,45 @@ class Query:
                 return False
 
         return True
+
+    def __repr__(self) -> str:
+        string: str = "Query("
+
+        # make the item_name property easier to read
+        # ex. LIVID_DAGGER -> Livid Dagger
+        human_readable_name = (
+            self.item_name.replace("_", " ").title() if self.item_name else ""
+        )
+
+        if self.rarity is not None:
+            string += self.rarity.__repr__() + " "
+
+        if self.reforge is not None:
+            string += self.reforge + " "
+
+        string += human_readable_name + " "
+
+        if self.dungoun_stars_at_min is not None:
+            string += ("✪" * self.dungoun_stars_at_min) + " "
+
+        if self.hot_potatoes_at_min is not None:
+            string += ("🥔" * self.hot_potatoes_at_min) + " "
+
+        if self.max_price is not None:
+            string += f"max_price={self.max_price}, "
+
+        if self.enchantments_at_min is not None:
+            _enchant_string = ""
+            for enchantment in self.enchantments_at_min:
+                _enchant_string += f"{enchantment}, "
+
+            _enchant_string = _enchant_string[:-2]
+
+            string += f"enchantments_at_min=[{_enchant_string}], "
+
+        # Remove the last comma and space
+        string = string[:-2]
+
+        string += ")"
+
+        return string
