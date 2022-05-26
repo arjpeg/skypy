@@ -32,4 +32,4 @@ class Item:
         ]
 
     def __repr__(self):
-        return f"Item({self.name} ({self.rarity.__repr__()}) {remove_color_codes(self.extra)})"
+        return f"Item({self.name} ({self.rarity.__repr__()}))"

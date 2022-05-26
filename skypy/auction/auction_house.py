@@ -89,6 +89,11 @@ class AuctionHouse:
         """
         Get the auction pages with the given numbers.
         """
+        if page_to_end == -1:
+            page_to_end = self.cur_max_page
+
+        if page_start > page_to_end:
+            raise ValueError("page_to_start must be less than page_to_end.")
 
         return self._event_loop.run_until_complete(get_all_auctions_in_range(self._network_client, (page_start, page_to_end)))  # type: ignore
 
@@ -103,3 +108,9 @@ class AuctionHouse:
                 matched_auctions.append(auction)
 
         return matched_auctions
+
+    def get_auction(self, page_data: dict[str, Any], auction_no: int) -> Auction:
+        """
+        Get the auction with the given number.
+        """
+        return Auction.from_json(page_data["auctions"][auction_no])
