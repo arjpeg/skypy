@@ -6,7 +6,6 @@ import sys
 from typing import Any
 
 import httpx
-import requests
 from skypy.auction.auction import Auction
 from skypy.auction.query.query_object import Query
 from skypy.errors import AHPageDoesntExistError
@@ -56,9 +55,8 @@ class AuctionHouse:
             if page_number > 0
             else self.API_URL
         )
-        response = requests.get(url)
 
-        return response.json()
+        return self._event_loop.run_until_complete(get_data(self._network_client, url))
 
     def get_auctions(
         self, page_data: dict[str, Any], how_many_auctions_to_load: int = -1
@@ -84,9 +82,6 @@ class AuctionHouse:
         return self._event_loop.run_until_complete(
             get_data(self._network_client, self.API_URL)
         )["totalPages"]
-
-        # page_data: dict[str, Any] = requests.get(self.API_URL).json()
-        # return page_data["totalPages"]
 
     def get_auction_pages(
         self, page_start: int, page_to_end: int
