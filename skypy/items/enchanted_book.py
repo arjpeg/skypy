@@ -20,6 +20,7 @@ class EnchantedBook(Item):
         nbt_data: dict[str, Any],
         uuid: str | None = None,
         rarity: ItemRarity = ItemRarity.COMMON,
+        name: str = "Enchanted Book",
     ) -> None:
         self.enchants: list[Enchant] = enchants
         self.lore = remove_color_codes(lore)
@@ -27,6 +28,7 @@ class EnchantedBook(Item):
         self.rarity = rarity
         self.nbt_data = nbt_data
         self.uuid = uuid
+        self.name = name
 
         self.id = self.nbt_data["i"][0]["tag"]["ExtraAttributes"]["id"]
 
@@ -48,6 +50,7 @@ class EnchantedBook(Item):
             nbt_data=item.nbt_data,
             uuid=item.uuid,
             rarity=item.rarity,
+            name=item.name,
         )
 
     def __repr__(self):

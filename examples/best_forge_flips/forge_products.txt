@@ -1,0 +1,310 @@
+Refined Diamond	Epic	
+Enchanted Diamond Block 2x Enchanted Diamond Block
+8 hours	2
+Refined Mithril	Epic	
+Enchanted Mithril 160x Enchanted Mithril
+6 hours	2
+Refined Titanium	Legendary	
+Enchanted Titanium 16x Enchanted Titanium
+12 hours	2
+Fuel Tank	Rare	
+Enchanted Block of Coal 2x Enchanted Block of Coal
+10 hours	2
+Bejeweled Handle	Rare	
+Glacite Jewel 3x Glacite Jewel
+30 minutes	2
+Drill Engine	Rare	
+Enchanted Iron Block 1x Enchanted Iron Block
+Enchanted Redstone Block 3x Enchanted Redstone Block
+Golden Plate 1x Golden Plate
+Treasurite 10x Treasurite
+Refined Diamond 1x Refined Diamond
+1 day 6 hours	3
+Golden Plate	Rare	
+Enchanted Gold Block 2x Enchanted Gold Block
+Glacite Jewel 5x Glacite Jewel
+Refined Diamond 1x Refined Diamond
+6 hours	3
+Mithril Plate	Rare	
+Refined Mithril 5x Refined Mithril
+Golden Plate 1x Golden Plate
+Enchanted Iron Block 1x Enchanted Iron Block
+Refined Titanium 1x Refined Titanium
+18 hours	3
+Gemstone Mixture	Rare	
+Fine Jade Gemstone 4x Fine Jade Gemstone
+Fine Amber Gemstone 4x Fine Amber Gemstone
+Fine Amethyst Gemstone 4x Fine Amethyst Gemstone
+Fine Sapphire Gemstone 4x Fine Sapphire Gemstone
+Sludge Juice 320x Sludge Juice
+4 hours	4
+Perfect Jasper Gemstone	Legendary	
+Flawless Jasper Gemstone 5x Flawless Jasper Gemstone
+Jasper Crystal 1x Jasper Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Ruby Gemstone	Legendary	
+Flawless Ruby Gemstone 5x Flawless Ruby Gemstone
+Ruby Crystal 1x Ruby Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Jade Gemstone	Legendary	
+Flawless Jade Gemstone 5x Flawless Jade Gemstone
+Jade Crystal 1x Jade Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Sapphire Gemstone	Legendary	
+Flawless Sapphire Gemstone 5x Flawless Sapphire Gemstone
+Sapphire Crystal 1x Sapphire Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Amber Gemstone	Legendary	
+Flawless Amber Gemstone 5x Flawless Amber Gemstone
+Amber Crystal 1x Amber Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Topaz Gemstone	Legendary	
+Flawless Topaz Gemstone 5x Flawless Topaz Gemstone
+Topaz Crystal 1x Topaz Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Amethyst Gemstone	Legendary	
+Flawless Amethyst Gemstone 5x Flawless Amethyst Gemstone
+Amethyst Crystal 1x Amethyst Crystal
+20 hours	5 (+ Gemstone X)
+Perfect Opal Gemstone	Legendary	
+Flawless Opal Gemstone 5x Flawless Opal Gemstone
+20 hours 5 (+ Gemstone X)
+Mithril Pickaxe Uncommon 
+Bejeweled Handle 1x Bejeweled Handle
+Enchanted Gold 10x Enchanted Gold
+45 minutes 2
+Beacon II Rare 
+Beacon I 1x Beacon I
+Refined Mithril 5x Refined Mithril
+20 hours 2
+Titanium Talisman Uncommon 
+Refined Titanium 2x Refined Titanium
+14 hours 2
+Diamonite Rare 
+Refined Diamond 3x Refined Diamond
+6 hours 2
+Power Crystal Epic 
+Starfall 256x Starfall
+2 hours 2
+Travel Scroll to the Dwarven Forge Rare 
+Mithril 48x Mithril
+Titanium 80x Titanium
+Enchanted Ender Pearl 16x Enchanted Ender Pearl
+Coin drop (emerald).png 25,000 coins
+5 hours 2
+Refined Mithril Pickaxe Rare 
+Refined Mithril 3x Refined Mithril
+Bejeweled Handle 2x Bejeweled Handle
+Refined Diamond 1x Refined Diamond
+Enchanted Gold 30x Enchanted Gold
+22 hours 3
+Mithril Drill SX-R226 Rare 
+Drill Engine 1x Drill Engine
+Refined Mithril 3x Refined Mithril
+Fuel Tank 1x Fuel Tank
+4 hours 3
+Mithril-Infused Fuel Tank Rare 
+Mithril Plate 3x Mithril Plate
+Fuel Tank 5x Fuel Tank
+10 hours 3
+Mithril-Plated Drill Engine Rare 
+Drill Engine 2x Drill Engine
+Mithril Plate 3x Mithril Plate
+15 hours 3
+Beacon III Epic 
+Beacon II 1x Beacon II
+Refined Mithril 10x Refined Mithril
+1 day 6 hours 3
+Titanium Ring Rare 
+Refined Titanium 6x Refined Titanium
+Titanium Talisman 1x Titanium Talisman
+20 hours 3
+Pure Mithril Rare 
+Refined Mithril 2x Refined Mithril
+12 hours 3
+Rock Gemstone Rare 
+Enchanted Cobblestone 128x Enchanted Cobblestone
+Treasurite 64x Treasurite
+22 hours 3
+Petrified Starfall Epic 
+Starfall 512x Starfall
+14 hours 3
+Pesto Goblin Omelette Rare 
+Green Goblin Egg 99x Green Goblin Egg
+Fine Jade Gemstone 1x Fine Jade Gemstone
+20 hours 4
+Ammonite Pet Legendary 
+Helix 1x Helix
+Coin drop (emerald).png 300,000 coins
+12 days 3
+Ruby Drill TX-15 Rare 
+Drill Engine 1x Drill Engine
+Fuel Tank 1x Fuel Tank
+Fine Ruby Gemstone 6x Fine Ruby Gemstone
+1 hour 3
+Travel Scroll to the Crystal Hollows Rare 
+Flawed Ruby Gemstone 48x Flawed Ruby Gemstone
+Fine Ruby Gemstone 80x Fine Ruby Gemstone
+Enchanted Ender Pearl 16x Enchanted Ender Pearl
+Coin drop (emerald).png 50,000 coins
+10 hours 3
+Mithril Drill SX-R326 Epic 
+Mithril Drill SX-R226 1x Mithril Drill SX-R226
+Golden Plate 10x Golden Plate
+Mithril Plate 2x Mithril Plate
+30 seconds 4
+Titanium-Plated Drill Engine Rare 
+Drill Engine 10x Drill Engine
+Plasma 5x Plasma
+Mithril Plate 4x Mithril Plate
+Refined Titanium 5x Refined Titanium
+1 day 6 hours 4
+Goblin Omelette Rare 
+Goblin Egg 99x Goblin Egg
+18 hours 4
+Beacon IV Epic 
+Beacon III 1x Beacon III
+Refined Mithril 20x Refined Mithril
+Plasma 1x Plasma
+1 day 16 hours 4
+Titanium Artifact Epic 
+Refined Titanium 12x Refined Titanium
+Titanium Ring 1x Titanium Ring
+1 day 12 hours 4
+Hot Stuff Legendary 
+Hard Stone 128x Hard Stone
+Rough Amber Gemstone 64x Rough Amber Gemstone
+1 day 4 (+ Hard Stone IV)
+Sunny Side Goblin Omelette Rare 
+Yellow Goblin Egg 99x Yellow Goblin Egg
+Fine Topaz Gemstone 1x Fine Topaz Gemstone
+20 hours 6
+Gemstone Drill LT-522 Rare 
+Ruby Drill TX-15 1x Ruby Drill TX-15
+Gemstone Mixture 3x Gemstone Mixture
+30 seconds 4
+Titanium Drill DR-X355 Epic 
+Drill Engine 1x Drill Engine
+Fuel Tank 1x Fuel Tank
+Golden Plate 6x Golden Plate
+Refined Titanium 10x Refined Titanium
+Refined Mithril 10x Refined Mithril
+2 days 16 hours 5
+Titanium Drill DR-X455 Epic 
+Titanium Drill DR-X355 1x Titanium Drill DR-X355
+Refined Diamond 10x Refined Diamond
+Refined Titanium 16x Refined Titanium
+Mithril Plate 6x Mithril Plate
+30 seconds 5
+Titanium Drill DR-X555 Epic 
+Titanium Drill DR-X455 1x Titanium Drill DR-X455
+Refined Diamond 20x Refined Diamond
+Refined Titanium 32x Refined Titanium
+Enchanted Iron Block 2x Enchanted Iron Block
+Mithril Plate 15x Mithril Plate
+Plasma 20x Plasma
+30 seconds 5
+Titanium-Infused Fuel Tank Rare 
+Refined Titanium 10x Refined Titanium
+Refined Diamond 10x Refined Diamond
+Refined Mithril 10x Refined Mithril
+Fuel Tank 10x Fuel Tank
+1 day 1 hour 5
+Beacon V Epic 
+Beacon IV 1x Beacon IV
+Refined Mithril 40x Refined Mithril
+Plasma 5x Plasma
+2 days 2 hours 5
+Titanium Relic Legendary 
+Refined Titanium 20x Refined Titanium
+Titanium Artifact 1x Titanium Artifact
+3 days 5
+Spicy Goblin Omelette Rare 
+Red Goblin Egg 99x Red Goblin Egg
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+20 hours 5
+Gemstone Chamber Epic 
+Worm Membrane 100x Worm Membrane
+Gemstone Mixture 1x Gemstone Mixture
+Coin drop (emerald).png 25,000 coins
+4 hours 5
+Topaz Drill KGR-12 Epic 
+Gemstone Drill LT-522 1x Gemstone Drill LT-522
+Flawless Topaz Gemstone 1x Flawless Topaz Gemstone
+Gemstone Mixture 3x Gemstone Mixture
+Magma Core 5x Magma Core
+30 seconds 5
+Ruby-polished Drill Engine Rare 
+Mithril-Plated Drill Engine 1x Mithril-Plated Drill Engine
+Superlite Motor 10x Superlite Motor
+Fine Ruby Gemstone 10x Fine Ruby Gemstone
+20 Hours 5
+Gemstone Fuel Tank Rare 
+Titanium-Infused Fuel Tank 1x Titanium-Infused Fuel Tank
+Control Switch 30x Control Switch
+Gemstone Mixture 10x Gemstone Mixture
+30 Hours 5
+Blue Cheese Goblin Omelette Rare 
+Perfect Sapphire Gemstone 1x Perfect Sapphire Gemstone
+Blue Goblin Egg 99x Blue Goblin Egg
+20 Hours 6
+Titanium Drill DR-X655 Legendary 
+Titanium Drill DR-X555 1x Titanium Drill DR-X555
+Corleonite 30x Corleonite
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+Refined Diamond 5x Refined Diamond
+Gemstone Mixture 16x Gemstone Mixture
+Refined Titanium 12x Refined Titanium
+Mithril Plate 5x Mithril Plate
+30 seconds 6
+Jasper Drill X Epic 
+Topaz Drill KGR-12 1x Topaz Drill KGR-12
+Flawless Jasper Gemstone 1x Flawless Jasper Gemstone
+Treasurite 100x Treasurite
+30 seconds 6
+Sapphire-polished Drill Engine Rare 
+Titanium-Plated Drill Engine 1x Titanium-Plated Drill Engine
+Electron Transmitter 25x Electron Transmitter
+FTX 3070 25x FTX 3070
+Fine Sapphire Gemstone 20x Fine Sapphire Gemstone
+20 Hours 6
+Amber Material Epic 
+Fine Amber Gemstone 12x Fine Amber Gemstone
+Golden Plate 1x Golden Plate
+7 hours 6
+Helmet Of Divan Legendary 
+Divan Fragment 5x Divan Fragment
+Gemstone Mixture 10x Gemstone Mixture
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+23 hours 6
+Chestplate Of Divan Legendary 
+Divan Fragment 8x Divan Fragment
+Gemstone Mixture 10x Gemstone Mixture
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+23 hours 6
+Leggings Of Divan Legendary 
+Divan Fragment 7x Divan Fragment
+Gemstone Mixture 10x Gemstone Mixture
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+23 hours 6
+Boots Of Divan Legendary 
+Divan Fragment 4x Divan Fragment
+Gemstone Mixture 10x Gemstone Mixture
+Flawless Ruby Gemstone 1x Flawless Ruby Gemstone
+23 hours 6
+Amber-polished Drill Engine Rare 
+Ruby-polished Drill Engine 1x Ruby-polished Drill Engine
+Sapphire-polished Drill Engine 1x Sapphire-polished Drill Engine
+Flawless Amber Gemstone 1x Flawless Amber Gemstone
+Robotron Reflector 50x Robotron Reflector
+2 days 2 hours 7
+Perfectly-Cut Fuel Tank Rare 
+Gemstone Fuel Tank 1x Gemstone Fuel Tank
+Gemstone Mixture 25x Gemstone Mixture
+Synthetic Heart 70x Synthetic Heart
+2 days 2 hours 7
+Divan's Drill Mythic 
+Divan's Alloy 1x Divan's Alloy
+Titanium Drill DR-X655 1x Titanium Drill DR-X655
+Coin drop (emerald).png 50,000,000 coins
+2 days 12 hours 7

@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv  # type: ignore
 
 import skypy.auction as auction  # type: ignore
+import skypy.bazaar as bazaar  # type: ignore
 import skypy.globals as _globals
 import skypy.items as item  # type: ignore
 import skypy.utils as utils  # type: ignore
